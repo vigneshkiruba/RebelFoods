@@ -34,22 +34,11 @@ class App extends Component {
       });
   };
 
- /* getToken = () => {
-    fetch("https://s3-ap-southeast-1.amazonaws.com/he-public-data/beercraft5bac38c.json", {
-      method: "POST",
-      headers: { Accept: "application/json" },
-    })
-      .then((data) => data.json())
-      .then((response) => this.setState({ token: response }))
-      .then((error) => console.log(error));
-  };*/
-
    componentDidMount() {
     const BeercraftAPI = axios.get("https://s3-ap-southeast-1.amazonaws.com/he-public-data/beercraft5bac38c.json");
     const BeerimagesAPI = axios.get("https://s3-ap-southeast-1.amazonaws.com/he-public-data/beerimages7e0480d.json");
      this.callBeercraftAPI(BeercraftAPI);
      this.callBeerimagesAPI(BeerimagesAPI);
-    //await this.getToken();
   }
 
   render() {

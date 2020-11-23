@@ -3,7 +3,6 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
 td,
 th {
   border: 1px solid #dddddd;
@@ -46,4 +45,7 @@ th {
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
   border-radius: unset;
+}
+.search {
+  text-align: center;
 }
